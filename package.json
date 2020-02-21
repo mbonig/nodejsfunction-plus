@@ -1,0 +1,72 @@
+{
+  "name": "nodejsfunction-plus",
+  "version": "1.0.0",
+  "description": "The NodejsFunction from the @aws-cdk/aws-lambda-nodejs package but with the AWS_NODEJS_CONNECTION_REUSE_ENABLED automatically set.",
+  "keywords": [
+    "cdk",
+    "nodejs",
+    "lambda",
+    "httpkeepalive"
+  ],
+  "scripts": {
+    "build": "jsii",
+    "build:watch": "jsii -w",
+    "package": "jsii-pacmak",
+    "test": "tsc && jest",
+    "watch": "tsc -w"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "jsii": {
+    "outdir": "dist",
+    "targets": {
+      "python": {
+        "distName": "mbonig.aws_lambda_nodejs.NodejsFunction-Plus",
+        "module": "mbonig.aws_lambda_nodejs"
+      },
+      "java": {
+        "package": "com.matthewbonig.awscdk.services.lambda.nodejs.NodejsFunction_Plus",
+        "maven": {
+          "groupId": "com.matthewbonig.awscdk.services.lambda.nodejs",
+          "artifactId": "NodejsFunction_Plus"
+        }
+      },
+      "dotnet": {
+        "namespace": "MBonig.CDK.AWS.Lambda.Nodejs.NodejsFunction_Plus",
+        "packageId": "MBonig.CDK.AWS.Lambda.Nodejs"
+      }
+    }
+  },
+  "awscdkio": {
+    "twitter": "mattbonig"
+  },
+  "author": {
+    "name": "Matthew Bonig",
+    "email": "matthew.bonig@gmail.com",
+    "twitter": "mattbonig"
+  },
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/mbonig/nodejsfunction-plus.git",
+    "type": "git"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.3",
+    "@types/node": "^13.7.4",
+    "jest": "^25.1.0",
+    "jsii": "^1.0.0",
+    "jsii-pacmak": "^1.0.0",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.2"
+  },
+  "dependencies": {
+    "@aws-cdk/core": "^1.25.0",
+    "@aws-cdk/aws-lambda": "^1.25.0",
+    "@aws-cdk/aws-lambda-nodejs": "^1.25.0"
+  },
+  "peerDependencies": {
+    "@aws-cdk/core": "^1.25.0",
+    "@aws-cdk/aws-lambda": "^1.25.0",
+    "@aws-cdk/aws-lambda-nodejs": "^1.25.0"
+  }
+}
