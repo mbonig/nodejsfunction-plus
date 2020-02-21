@@ -6,3 +6,4 @@ dist/
 **/*.js
 **/*.git d.ts
 cdk.out/
+!jest.config.js

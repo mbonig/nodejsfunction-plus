@@ -4,6 +4,6 @@ import {Construct} from "@aws-cdk/core";
 export class NodejsFunction extends OG {
 
     constructor(scope: Construct, id: string, props: NodejsFunctionProps) {
-        super(scope, id, {...props, environment: {...(props && props.environment), AWS_NODEJS_CONNECTION_REUSE_ENABLED: "1"}});
+        super(scope, id, {...props, environment: {...props.environment, AWS_NODEJS_CONNECTION_REUSE_ENABLED: "1"}});
     }
 }
