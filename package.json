@@ -21,18 +21,11 @@
     "outdir": "dist",
     "targets": {
       "python": {
-        "distName": "mbonig.aws_lambda_nodejs.NodejsFunction-Plus",
+        "distName": "mbonig.aws_lambda_nodejs.NodejsFunctionPlus",
         "module": "mbonig.aws_lambda_nodejs"
       },
-      "java": {
-        "package": "com.matthewbonig.awscdk.services.lambda.nodejs.NodejsFunction_Plus",
-        "maven": {
-          "groupId": "com.matthewbonig.awscdk.services.lambda.nodejs",
-          "artifactId": "NodejsFunction_Plus"
-        }
-      },
       "dotnet": {
-        "namespace": "MBonig.CDK.AWS.Lambda.Nodejs.NodejsFunction_Plus",
+        "namespace": "MBonig.CDK.AWS.Lambda.Nodejs.NodejsFunctionPlus",
         "packageId": "MBonig.CDK.AWS.Lambda.Nodejs"
       }
     }
@@ -51,6 +44,7 @@
     "type": "git"
   },
   "devDependencies": {
+    "@aws-cdk/assert": "^1.25.0",
     "@types/jest": "^25.1.3",
     "@types/node": "^13.7.4",
     "jest": "^25.1.0",

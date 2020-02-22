@@ -19,6 +19,20 @@ This library provides constructs for Node.js Lambda functions. Well, ok, so AWS 
 
 All this CDK construct does it expose the same `NodejsFunction` construct as that other package, but I set the `AWS_NODEJS_CONNECTION_REUSE_ENABLED` for you. Why? Because it's a super great environment flag built into the AWS SDK which [enables http keep-alive](https://theburningmonk.com/2019/02/lambda-optimization-tip-enable-http-keep-alive/), and greatly improves performance.
 
+## Usage
+
+This is a drop-in replacement:
+
+```typescript
+
+//import {NodejsFunction} from '@aws-cdk/aws-lambda-nodejs';
+import {NodejsFunction} from 'nodejsfunction-plus'
+
+...
+
+new NodejsFunction(this,'whatever',{});
+```
+
 ## Contributing
 
 Just submit a PR.

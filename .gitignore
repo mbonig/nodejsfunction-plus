@@ -7,3 +7,4 @@ dist/
 **/*.git d.ts
 cdk.out/
 !jest.config.js
+.cache
