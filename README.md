@@ -1,6 +1,9 @@
 ## Matt's Lambda Node.js Library
 <!--BEGIN STABILITY BANNER-->
 
+
+# This construct is now deprecated in favor of the standard NodeJsFunction with the [awsSdkConnectionReuse prop](https://docs.aws.amazon.com/cdk/api/latest/docs/@aws-cdk_aws-lambda-nodejs.NodejsFunction.html#construct-props) set.
+
 ---
 
 ![Stability: Experimental](https://img.shields.io/badge/stability-Experimental-important.svg?style=for-the-badge)
